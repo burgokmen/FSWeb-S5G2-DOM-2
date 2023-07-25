@@ -9,7 +9,7 @@ document.querySelector("h1").addEventListener("click", function (e) {
 // Kodlar buraya gelecek!
 /* 
 --mouseover
-keydown
+--keydown
 wheel
 load
 focus
@@ -50,3 +50,20 @@ btns.forEach((e, i) => {
     event.target.style.textSize = "";
   };
 });
+
+document.addEventListener("keydown", function (e) {
+  if (e.code === "ArrowDown") {
+    alert("alt tusa tıkladın!");
+  } else if (e.code === "ArrowUp") {
+    alert("ust tusa tıkladın!");
+  } else if (e.code === "ArrowLeft") {
+    alert("sol tusa tıkladın!");
+  } else if (e.code === "ArrowRight") {
+    alert("sag tusa tıkladın!");
+  }
+});
+
+/* querySelector(".content-section .inverse-content").onwheel = function (e) {
+  e.target.style.backgroundColor = "blue";
+};
+ */
